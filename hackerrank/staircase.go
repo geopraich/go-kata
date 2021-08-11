@@ -1,16 +1,9 @@
-package main
+package hackerrank
 
 import (
 	"fmt"
 	"strconv"
 )
-
-func main() {
-	var steps int
-	fmt.Scan(&steps)
-	staircase(steps)
-	staircaseTwo(steps)
-}
 
 func staircase(steps int) {
 	char := ""

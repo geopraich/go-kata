@@ -1,25 +1,16 @@
-package main
+package hackerrank
 
 import "testing"
 
-var testData = []struct {
-	in []int64
-	out, out2 int64
-}{
-	{[]int64{1,2,3,4,5},10,14},
-	{[]int64{1,2,3,4,5,6,7,8,9},36,44},
-}
-
-var testData2 = []struct {
-	in []int
-	out, out2 int64
-}{
-	{[]int{1,2,3,4,5},10,14},
-	{[]int{1,2,3,4,5,6,7,8,9},36,44},
-}
-
-
 func TestMinMaxSum(t *testing.T) {
+	var testData = []struct {
+		in        []int64
+		out, out2 int64
+	}{
+		{[]int64{1, 2, 3, 4, 5}, 10, 14},
+		{[]int64{1, 2, 3, 4, 5, 6, 7, 8, 9}, 36, 44},
+	}
+
 	for _, pair := range testData {
 		expected, expected2 := pair.out, pair.out2
 		actual, actual2 := maxMinSum(pair.in)
@@ -30,7 +21,14 @@ func TestMinMaxSum(t *testing.T) {
 	}
 }
 
-func TestMiniMaxSum(t *testing.T){
+func TestMiniMaxSum(t *testing.T) {
+	var testData2 = []struct {
+		in        []int
+		out, out2 int64
+	}{
+		{[]int{1, 2, 3, 4, 5}, 10, 14},
+		{[]int{1, 2, 3, 4, 5, 6, 7, 8, 9}, 36, 44},
+	}
 
 	for _, pair := range testData2 {
 		expected, expected2 := pair.out, pair.out2
@@ -42,7 +40,14 @@ func TestMiniMaxSum(t *testing.T){
 	}
 }
 
-func TestMiniMaxSum2(t *testing.T){
+func TestMiniMaxSum2(t *testing.T) {
+	var testData2 = []struct {
+		in        []int
+		out, out2 int64
+	}{
+		{[]int{1, 2, 3, 4, 5}, 10, 14},
+		{[]int{1, 2, 3, 4, 5, 6, 7, 8, 9}, 36, 44},
+	}
 
 	for _, pair := range testData2 {
 		expected, expected2 := pair.out, pair.out2

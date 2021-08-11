@@ -1,6 +1,5 @@
-package main
+package hackerrank
 
-import "fmt"
 // brute force
 func kangarooJumpTogether(jumps []int) string {
 	var lst = make([]int, 10000)
@@ -20,14 +19,4 @@ func kangarooJumpTogether(jumps []int) string {
 		c3 += pos2
 	}
 	return "NO"
-}
-
-
-func main() {
-	var input = make([]int, 4)
-	for c := 0; c < 4; c++ {
-		fmt.Scan(&input[c])
-	}
-	ans := kangarooJumpTogether(input)
-	fmt.Println(ans)
 }

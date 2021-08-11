@@ -1,21 +1,8 @@
-package main
+package hackerrank
 
 import (
-	"fmt"
 	"sort"
 )
-
-func main() {
-	input := make([]int, 5)
-	for c := 0; c < 5; c++ {
-		fmt.Scan(&input[c])
-	}
-
-	//min, max := maxMinSum(input)
-	//min, max := miniMaxSum(input)
-	min, max := miniMaxSum2(input)
-	fmt.Printf("%v %v", min, max)
-}
 
 func maxMinSum(lst []int64) (int64, int64) {
 	var total int64
@@ -47,7 +34,7 @@ func miniMaxSum(lst []int) (int64, int64) {
 	for _, number := range lst[1:] {
 		max += int64(number)
 	}
-	for _, number := range lst[0:len(lst)-1] {
+	for _, number := range lst[0 : len(lst)-1] {
 		min += int64(number)
 	}
 

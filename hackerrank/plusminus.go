@@ -1,4 +1,4 @@
-package main
+package hackerrank
 
 import "fmt"
 
@@ -6,7 +6,7 @@ func main() {
 	var a int
 	fmt.Scan(&a)
 	b := make([]float64, a)
-	for c := 0; c < a; c++{
+	for c := 0; c < a; c++ {
 		fmt.Scan(&b[c])
 	}
 
@@ -31,5 +31,5 @@ func fraction(denom int, s []float64) (float64, float64, float64) {
 		}
 	}
 
-	return pT/d2, nT/d2, zT/d2
+	return pT / d2, nT / d2, zT / d2
 }

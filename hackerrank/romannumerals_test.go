@@ -1,9 +1,9 @@
-package gokata
+package hackerrank
 
 import "testing"
 
 var arabicRomanPairsTest = []struct {
-	in int
+	in  int
 	out string
 }{
 	{1, "I"},
